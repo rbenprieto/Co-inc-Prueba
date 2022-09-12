@@ -13,3 +13,9 @@ Una vez tengan ambos instalados
       
 4. Para dejar de verlo pulsar lo siguiente en la consola donde activaron el servidor
       Control + c
+      
+      
+EXPLICACIÓN DE LA SOLUCIÓN 
+Esta aplicación web la hice con python utilizando el framework Django con base de datos SQLite3 bajo el modelo cliente-servidor. En esta app se puede ver, añadir y eliminar data. En el back habilité el admin y corrí los templates con Jinja 2, además de usar los mejores estándares que conozco en la conexión de archivos. Realicé integración entre el back y front mediante el ORM con distintas formas de visualización. 
+
+En el front usé HTML, CSS, JS y BootStrap 5; Organicé todo bajo el método de estáticos y bloques de contenido, permitiendo escalabilidad ordenada. El formulario se encuentra controlado con validación de contenido con HTML, BootStrap y JS que evitan algunos errores en el diligenciamiento de la información. ¡Ojalá sea de tu agrado y espero verte en la siguiente fase!
