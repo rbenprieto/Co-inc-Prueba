@@ -1,0 +1,25 @@
+{% load static %}
+
+
+<nav class="navbar navbar-light navbar-expand-md py-0">
+    <div class="container-fluid py-4" style="background-color: #edfcf5;">
+        <a class="navbar-brand px-md-4" href="{% url 'registros:inicio'%}"><img src="{% static 'img/logo.jpeg'%}" alt="" class="img-fluid" width="200"></a>
+        <button class="navbar-toggler border text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <span class="navbar-toggler-icon icon-dark" style="border-color: #212529;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-3" >
+                <li class="nav-item active">
+                    <a class="nav-link text-center px-5" href="{% url 'registros:inicio' %}#conoceme" style="font-size: large; font-weight: 600; color: #212529;">Conóceme</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-center" style="font-size: large; font-weight: 600; color: #212529;" href="{% url 'registros:formulario' %}">Formulario</a>
+                </li>
+                <li class="nav-item active px-5">
+                    <a class="nav-link text-center" style="font-size: large; font-weight: 600; color: #212529;" href="{% url 'registros:inicio' %}#tecnologias">Tecnologías que manejo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

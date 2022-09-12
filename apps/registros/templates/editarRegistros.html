@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+    <div class="container py-5 px-0">
+        <div class="row justify-content-center py-3">
+            <div class="col-md-5 text-center py-1">
+                <p class="fst-italic">Hasta acá llega la operación ya que hay un error que no logro identificar en la url de la app, por experiencia capaz y es un "/". <br> Pido disculpas</p>
+                <h2>Edita los datos del inscrito </h2>
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/editar/cambiarRegistro/" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" id="txtNombre" name="txtNombre" value="{{registros.nombre}}" class="mform form-control" placeholder="Nombre completo" minlength="3" maxlength="255" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="emlEmail" name="emlEmail" value="{{registros.email}}" class="mform form-control" placeholder="Email" minlength="3" maxlength="255" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="txtCiudad" name="txtCiudad" value="{{registros.ciudad}}" class="mform form-control" placeholder="Ciudad" minlength="3" maxlength="255" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="txtCiudad" name="txtCiudad" value="{{registros.fecha_inscripcion}}" class="mform form-control" placeholder="Ciudad" minlength="3" maxlength="255" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-warning">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

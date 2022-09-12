@@ -1,0 +1,32 @@
+.backnav {
+    background-color: #edfcf5;
+    margin: 0px 0px 0px 0px;
+}
+
+.img-body {
+    width: 50%;
+}
+
+.back {
+    background-color: black;
+}
+
+.margin {
+    margin: 50px 10px 50px 10px;
+}
+
+.h1 {
+    font-size: 20 pt;
+}
+
+.justificar {
+    text-align: justify;
+}
+
+.centrado {
+    text-align: center
+}
+
+.mform {
+    margin: 10px 0px 10px 0px;
+}

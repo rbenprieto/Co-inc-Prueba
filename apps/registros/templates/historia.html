@@ -1,0 +1,46 @@
+{% load static %}
+{% block content %}
+<section class="py-5">
+    <div class="container-fluid py-md-3">
+        <div class="row items-align-center justify-content-center">
+            <div class="col-11 col-md-5">
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <h1 class="text-center fs-1">Bienvenido</h1>
+                        <p class="justificar"><br>Hola!! Soy Ruben Prieto, estoy muy feliz y agradecido que me hayas permitido realizar esta prueba técnica y estés tomando tiempo para evaluarla. <br><br> Me gustaría que en las siguientes secciones conocieras un poco más de mí, donde por ejemplo encontrarás como un administrador de empresas termina siendo programador. <br><br> Si deseas seguir al formulario presiona el siguiente botón <br></p>
+                        <a class="text-center bg-primary" href="{% url 'registros:formulario' %}"><button class="text-center btn btn-warning">Ir al formulario</button></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-5 text-center py-5 py-md-0">
+                <img class="img-fluid border rounded-3" src="{% static 'img/presentacion.jpg' %}" alt="" width="350">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color: #F7F8F8;" id="conoceme">
+    <div class="container-fluid margin py-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10"> 
+                <div class="row justify-content-center py-4">
+                    <div class="col-12 col-md-4 text-center">
+                        <img class="img-fluid" src="{% static 'img/graduacion.jpeg' %}" alt="">
+                    </div>
+                    <div class="justificar col-12 col-md-7">
+                        <h1 class="text-center fs-1">Mi historia</h1>
+                        <p class="justificar"><br> Cuando estaba terminando la universidad me dí cuenta que mi campo de acción no era interesante y que seguramente en unos años sería obsoleto, eso hizo que mi motivación se fuera al suelo.  No quería volver a saber nada de la administración de empresas ni de hacer cosas "normales", <b>quería retos</b>. 
+                        
+                        <br> <br> Un día vi un video de platzi e hice el curso de programación básica. Ese día decidí que mi futuro sería dedicado a la tecnología, y que así como una StartUp llamada platzi me cambió la vida a mí, otros productos podrían cambiar la vida de muchas personas. Así es como de forma autodidacta aprendí a programar, entendiendo en el camino que la administración de empresas no había sido un error, sino que ahora era un complemento de mi nuevo enfoque profesional. <br> <br> 
+                        
+                        <b class="fst-italic"> Hace año y medio trabajo en el sector tecnológico y hace un año soy programador en la Gobernación del Meta, donde junto al CIO como jefe directo y un equipo fantástico de compañeros desarrolladores he podido avanzar demasiado y aprender de los mejores.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
